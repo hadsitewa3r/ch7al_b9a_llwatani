@@ -35,7 +35,7 @@ int main(void){
 	time_t t = time(NULL);
 	struct tm tm = *localtime(&t);
 
-	int chhr = 5 - tm.tm_mon;
+	int chhr = 4 - tm.tm_mon;
 	int nhar = 36 - tm.tm_mday;
 	int iyam = nhar + nhar_b9a(tm.tm_mon + 1, tm.tm_year);
 	int sa3a = 32 - tm.tm_hour;
